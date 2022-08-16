@@ -14,9 +14,9 @@
         <v-divider></v-divider>
 
         <v-list density="compact" nav>
-          <v-list-item prepend-icon="mdi-calendar" title="Tréningový plán" value="myfiles"></v-list-item>
-          <v-list-item prepend-icon="mdi-dumbbell" title="Počítadlo sérií" value="shared"></v-list-item>
-          <v-list-item prepend-icon="mdi-weight-kilogram" title="Zápisník váhy" value="starred"></v-list-item>
+          <v-list-item to="/workout" prepend-icon="mdi-calendar" title="Tréningový plán" value="myfiles"></v-list-item>
+          <v-list-item to="/repetitions" prepend-icon="mdi-dumbbell" title="Počítadlo sérií" value="shared"></v-list-item>
+          <v-list-item to="/weight" prepend-icon="mdi-weight-kilogram" title="Zápisník váhy" value="starred"></v-list-item>
         </v-list>
       </v-navigation-drawer>
 
