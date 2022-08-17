@@ -16,8 +16,10 @@
         v-if="day.description !='Rest day'"
         >
           {{excercise}}
+
           <v-card-title>{{excercise.name}}</v-card-title>
-          {{excercise.sets[0]}}
+          {{excercise.sets}}
+          {{f(excercise)}}
           {{excercise.reps}}
           {{excercise.weight}}
           <v-card-actions>
@@ -37,9 +39,17 @@
 import {useWorkoutPlanStore} from "@/store/WorkoutPlanStore";
 
 const counter = useWorkoutPlanStore();
-
 </script>
+
 <script>
+
+function f(i) {
+  if (i.sets[0] != undefined){
+    console.log(i.name)
+    console.log(i.sets[0])
+  };
+}
+
 export default {
   name: "RepetitionsView",
   data: () => ({

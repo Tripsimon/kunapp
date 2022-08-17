@@ -1,5 +1,5 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import HomeView from '../views/LandingPageView.vue'
 import MainPageView from "@/views/MainPageView";
 import RepetitionsView from "@/views/RepetitionsView";
 
