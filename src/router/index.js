@@ -10,6 +10,14 @@ const routes = [
     name: 'home',
     component: HomeView
   },
+    /*
+  {
+    path: '/mainPage',
+    name: 'main',
+    component: MainPageView
+  },
+*/
+
   {
     path: '/about',
     name: 'about',
